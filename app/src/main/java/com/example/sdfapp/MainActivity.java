@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.example.sdfapp.login.LoginActivity;
+import com.example.sdfapp.model.ConnectionManager;
 import com.example.sdfapp.preferences.PreferencesActivity;
 
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public void loadViews() {
         webViewProgress = findViewById(R.id.webViewProgress);
         WebView newsView = findViewById(R.id.newsView);
+        newsView.setBackgroundColor(Color.GRAY);
         newsView.setOnScrollChangeListener((view, i, i1, i2, i3) -> {
             if (menuLayout.getVisibility() != View.GONE) menuLayout.setVisibility(View.GONE);
         });

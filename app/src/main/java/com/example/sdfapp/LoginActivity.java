@@ -1,4 +1,4 @@
-package com.example.sdfapp.login;
+package com.example.sdfapp;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.sdfapp.R;
+import com.example.sdfapp.model.ConnectionManager;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText user;
@@ -28,9 +28,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void userLogin(View view) {
-        String username = user.getText().toString();
-        String password = pw.getText().toString();
+        final String username = user.getText().toString();
+        final String password = pw.getText().toString();
 
-        new DatabaseManager(response).execute(username, password);
+        ConnectionManager.getInstance().login(username, password);
     }
 }
