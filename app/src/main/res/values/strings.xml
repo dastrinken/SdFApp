@@ -14,4 +14,5 @@
     <string name="loginBtn">Log In</string>
     <string name="prefsBtn">Preferences</string>
     <string name="testConBtn">Test Connection to Server</string>
+    <string name="raidBtn">Raid</string>
 </resources>

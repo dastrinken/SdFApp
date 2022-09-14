@@ -9,8 +9,12 @@
         <entry key="..\:/Users/armin/AndroidStudioProjects/SdFApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/armin/AndroidStudioProjects/SdFApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/armin/AndroidStudioProjects/SdFApp/app/src/main/res/layout/activity_preferences.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.35260416666666666" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17147922998986828" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_raid.xml" value="0.2894399315946986" />
+        <entry key="app/src/main/res/layout/raid_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/xml/sdf_preferences.xml" value="0.178125" />
       </map>
     </option>
   </component>

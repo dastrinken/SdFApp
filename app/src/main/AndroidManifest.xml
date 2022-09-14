@@ -33,6 +33,10 @@
             android:name=".preferences.PreferencesActivity"
             android:exported="false"
             android:label="PreferencesActivity" />
+        <activity
+            android:name=".RaidActivity"
+            android:exported="false"
+            android:label="RaidActivity" />
     </application>
 
 </manifest>

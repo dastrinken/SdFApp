@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2B2B2B"
+    android:background="@color/primaryColor"
+    android:backgroundTint="@color/primaryLightColor"
     tools:context=".MainActivity">
 
     <ImageView
@@ -12,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:background="#26A8DC"
+        android:background="@color/primaryColor"
         android:contentDescription="@string/titleBar"
         android:cropToPadding="true"
         android:scaleType="centerInside"
@@ -55,8 +56,16 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/raidBtn"
+            style="@style/sdfButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="menuBtnPressed"
+            android:text="@string/raidBtn" />
+
+        <Button
             android:id="@+id/prefsBtn"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/sdfButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="menuBtnPressed"
@@ -64,7 +73,7 @@
 
         <Button
             android:id="@+id/loginBtn"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/sdfButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="menuBtnPressed"
@@ -75,7 +84,7 @@
         android:id="@+id/bottomMenuLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#393939"
+        android:background="@color/primaryDarkColor"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,10 +92,11 @@
 
         <Button
             android:id="@+id/menuButton"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            style="@style/sdfButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTintMode="add"
             android:contentDescription="@string/menuButton"
             android:onClick="displayMenu"
             app:icon="@android:drawable/ic_dialog_dialer" />

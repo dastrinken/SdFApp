@@ -1,9 +1,12 @@
 package com.example.sdfapp.model;
 
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Looper;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.example.sdfapp.LoginActivity;
 import com.example.sdfapp.model.RESTClient.Request;
 
 import java.util.List;
@@ -33,21 +36,25 @@ public class ConnectionManager {
 
     /* URIs */
     //TODO: Change URI values when page goes online
-    private static final String URI = "https://sdf-rg.de/landing";
+    private static final String URI = "https://sdf-rg.de";
     private static final String URI_LOGIN = URI + "/system/database.php";
 
     /* Log in */
     private String authToken;
 
-    public void login(String username, String password) {
+    public String getAuthToken() {
+        return authToken;
+    }
+
+    public void login(String username, String password, ConnectionInterface listener) {
         final Request request = new Request(URI_LOGIN, RequestMethods.POST);
         request.setBody(new KeyValuePairs(new String[] {"login", String.valueOf(true), "android", String.valueOf(true), "username", username, "password", password}));
         asyncRESTRequest.execute(request, (response) -> {
             final boolean success = (response != null) && (!response.isEmpty());
             if(success) {
-                //authToken = response.get(0);
-                Log.w("RESPONSE ON SUCCESS: ", response.get(0));
+                authToken = response.get(0);
             }
+            listener.onLoginProcessed(success);
         });
     }
 
