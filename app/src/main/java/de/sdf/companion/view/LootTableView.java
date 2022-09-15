@@ -1,4 +1,4 @@
-package com.example.sdfapp.view;
+package de.sdf.companion.view;
 
 import android.os.Bundle;
 

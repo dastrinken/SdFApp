@@ -1,4 +1,4 @@
-package com.example.sdfapp;
+package de.sdf.companion;
 
 import android.content.Context;
 

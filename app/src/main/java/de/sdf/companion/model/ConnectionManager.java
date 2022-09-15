@@ -1,19 +1,15 @@
-package com.example.sdfapp.model;
+package de.sdf.companion.model;
 
-import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Looper;
-import android.preference.PreferenceManager;
-import android.util.Log;
-
-import com.example.sdfapp.LoginActivity;
-import com.example.sdfapp.model.RESTClient.Request;
 
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import com.example.sdfapp.model.RESTClient.*;
+import de.sdf.companion.model.RESTClient.KeyValuePairs;
+import de.sdf.companion.model.RESTClient.Request;
+import de.sdf.companion.model.RESTClient.RequestMethods;
 
 public class ConnectionManager {
     /* use ConnectionManager only as singleton */

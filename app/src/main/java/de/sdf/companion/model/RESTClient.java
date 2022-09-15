@@ -1,4 +1,4 @@
-package com.example.sdfapp.model;
+package de.sdf.companion.model;
 
 import android.util.Log;
 import android.widget.TextView;

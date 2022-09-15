@@ -1,4 +1,4 @@
-package com.example.sdfapp.preferences;
+package de.sdf.companion.preferences;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.sdfapp.R;
+import com.sdf.companion.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

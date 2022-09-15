@@ -1,6 +1,4 @@
-package com.example.sdfapp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package de.sdf.companion;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,8 +13,9 @@ import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.example.sdfapp.model.ConnectionManager;
-import com.example.sdfapp.preferences.PreferencesActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import de.sdf.companion.preferences.PreferencesActivity;
 
 
 public class MainActivity extends AppCompatActivity {
